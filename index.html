@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Week 6 Homework</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 current-city">
+          <h1>Tallinn, Estonia</h1>
+          <br />
+          <h3>
+            16:25 Wed 15 June
+            <br />
+            Sunny
+          </h3>
+        </div>
+
+        <div class="col-6 search-engine">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Another city"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 current-temp">
+          <h2>
+            <span class="current-emoji">☀️ </span>
+            <span class="temp-number">18</span>
+            <small>°C</small>
+            <span class="temp-bar">|</span>
+            <span class="temp-number">65</span>
+            <small>°F</small>
+          </h2>
+        </div>
+
+        <div class="col-6 current-char">
+          <h4>
+            Precipitation: 0% <br />
+            Humidity: 59% <br />
+            Wind: 10 m/s <br />
+          </h4>
+        </div>
+
+        <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col weather-forecast day-plus-one">
+          Day + 1
+          <div class="forecast-emoji">🌦</div>
+          °C
+          <br />
+          °F
+        </div>
+        <div class="col weather-forecast day-plus-two">
+          Day + 2
+          <div class="forecast-emoji">🌩</div>
+          °C
+          <br />
+          °F
+        </div>
+        <div class="col weather-forecast day-plus-three">
+          Day + 3
+          <div class="forecast-emoji">⛅️</div>
+          °C
+          <br />
+          °F
+        </div>
+        <div class="col weather-forecast day-plus-four">
+          Day + 4
+          <div class="forecast-emoji">☀️</div>
+          °C
+          <br />
+          °F
+        </div>
+        <div class="col weather-forecast day-plus-five">
+          Day + 5
+          <div class="forecast-emoji">💨</div>
+          °C
+          <br />
+          °F
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
