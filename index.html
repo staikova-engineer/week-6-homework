@@ -10,34 +10,49 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="scr/styles.css" />
     <title>Week 6 Homework</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-6 current-city">
-          <h1>Tallinn, Estonia</h1>
+        <div class="col-5 current-city">
+          <h1>
+            <div id="current-city">Loading...</div>
+          </h1>
           <br />
           <h3>
-            16:25 Wed 15 June
+            <div id="current-date">Loading...</div>
             <br />
-            Sunny
+            <div id="weather-now">Searching...</div>
           </h3>
         </div>
 
-        <div class="col-6 search-engine">
+        <div class="col-7 search-engine">
           <nav class="navbar">
             <div class="container-fluid">
               <form class="d-flex" role="search">
                 <input
+                  id="another-city"
                   class="form-control me-2"
                   type="search"
                   placeholder="Another city"
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-success" type="submit">
+                <button
+                  class="btn btn-outline-success"
+                  type="submit"
+                  id="button-search-city"
+                >
                   Search
+                </button>
+                <button
+                  class="btn btn-outline-success"
+                  type="click"
+                  id="button-current-city"
+                >
+                  Current city
                 </button>
               </form>
             </div>
@@ -46,22 +61,22 @@
 
         <div class="w-100 d-none d-md-block"></div>
 
-        <div class="col-6 current-temp">
+        <div class="col-5 current-temp">
           <h2>
-            <span class="current-emoji">☀️ </span>
-            <span class="temp-number">18</span>
-            <small>°C</small>
-            <span class="temp-bar">|</span>
-            <span class="temp-number">65</span>
-            <small>°F</small>
+            <span class="temp-number" id="celsius">Searching...</span>
           </h2>
         </div>
 
-        <div class="col-6 current-char">
+        <div class="col-7 current-char">
           <h4>
-            Precipitation: 0% <br />
-            Humidity: 59% <br />
-            Wind: 10 m/s <br />
+            <div>
+              Humidity:
+              <span id="humidity">...</span>
+            </div>
+            <div>
+              Wind:
+              <span id="wind">...</span>
+            </div>
           </h4>
         </div>
 
