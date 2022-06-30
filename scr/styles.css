@@ -12,6 +12,10 @@ button {
   font-size: 10px;
 }
 
+footer {
+  text-align: center;
+}
+
 #button-search-city {
   color: #1363df;
   border-color: #1363df;
